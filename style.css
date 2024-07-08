@@ -8,9 +8,16 @@
   background-color: #000000;
 }
 a {
-  color: #fff;
+  color: #299229;
   font-weight: 700;
   text-decoration-line: none;
+  padding: 10px 0;
+}
+.project-git {
+  margin-left: 20px;
+}
+a:hover {
+  opacity: 0.7;
 }
 .head {
   flex-direction: column;
@@ -101,9 +108,6 @@ a {
   margin-left: 20px;
   margin-bottom: 3px;
 }
-.project-name:hover {
-  opacity: 0.7;
-}
 .project-info {
   font-size: 13px;
   margin-left: 20px;
@@ -171,8 +175,9 @@ a {
     font-size: 40px;
     padding: 8px 8px;
     border-bottom: 1px solid gray;
-    animation-duration: 3s;
+    animation-duration: 10s;
     animation-name: slidein;
+    animation-iteration-count: infinite;
   }
   @keyframes slidein {
     from {
@@ -196,13 +201,15 @@ a {
     display: block;
     opacity: 0.7;
     height: 400px;
+    width: 100%;
   }
   .project {
-    padding: 150px 30px;
+    padding: 150px 0;
   }
   .project_wrapper {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: nowrap;
+    justify-content: space-between;
   }
   .project-title {
     color: #fff;
@@ -230,13 +237,15 @@ a {
   }
   .project-box_wrapper {
     display: flex;
+    width: 100%;
   }
   .project-box {
     display: flex;
     flex-direction: column;
     width: 350px;
     height: 500px;
-    border: 1px solid gray;
+    border: none;
+    border-radius: 5%;
   }
   .project-img img {
     width: 100%;
@@ -257,7 +266,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 150px 0 50px 0;
+    padding: 150px 0 30px 0;
   }
   .more li {
     list-style: none;
