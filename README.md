@@ -1,43 +1,36 @@
 
 ## 텍스트 효과
+
+
 ![bandicam2024-10-0101-53-28-143-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/be00d605-7e29-4078-b55c-f6ab94f7b588)<br/>
 ![텍스트 효과](https://github.com/user-attachments/assets/06024fd4-fdf6-4c89-93d2-d152363141ce)<br/>
 
-linear-gradient() 함수는 두 개 이상의 색이 직선을 따라 점진적으로 변화하도록 한다.
-사용 방법은 linear-gradient(방향_또는_각도, 색상_그리고_정지점1, 색상_그리고_정지점2, ... 색상_그리고_정지점n);이다.
-background-clip은 배경 이미지의 위치 기준점을 설정한다. 즉, 요소의 배경 (색상이나 이미지)이 어느 부분까지 차지할 지를 설정함.<br/>
-웹 문서에 이미지를 표현하는 방법은 img 태그와 background 속성을 사용하는 방법이 있는데,
-원칙적으로 의미가 있는 이미지는 img 태그를 사용하고, 그렇지 않은 경우 background 속성을 사용한다고 한다.<br/>
+### linear-gradient()
+두 개 이상의 색이 직선을 따라 점진적으로 변화하도록 한다. <br/>
+사용 방법은 linear-gradient(방향_또는_각도, 색상_그리고_정지점1, 색상_그리고_정지점2, ... 색상_그리고_정지점n) <br/><br/>
+
+
+### background-clip
+배경 이미지의 위치 기준점을 설정한다. <br/>
+즉, 요소의 배경 (색상이나 이미지)이 어느 부분까지 차지할 지를 설정함.<br/>
 background-clip 기준점은 border, padding, text, 컨텐츠에 설정할 수 있다.<br/>
 text 속성은 베타 버전이기 때문에 접두사 (-webkit)을 표현해주어야 한다.<br/><br/>
 
--webkit-text-fill-color: transparent;<br/>
+### -webkit-text-fill-color: transparent;
 배경색이 지정된 요소의 경우 배경색을 없애주어야한다.<br/>
 background의 색상을 없앨 때 none(없애기), transparent(투명)을 사용할 수 있다.<br/><br/>
 
-animation-fill-mode 속성은 애니메이션이 끝난 후의 상태를 설정한다.<br/>
+### animation-fill-mode 
+애니메이션이 끝난 후의 상태를 설정한다.<br/>
 forwards는 애니메이션의 끝난 후 그 지점에 그대로 있는 상태이다.<br/>
 
-white-space 속성은 줄바꿈, 공백을 설정한다.<br/>
+### white-space  
+줄바꿈, 공백을 설정한다.<br/>
 white-space: nowrap;은 줄바꿈, 공백을 인식하지 못하며 한 줄로 정렬한다.<br/>
 
 
-@keyframes shine {<br/>
-  0% {<br/>
-    background-position: 0 60%;<br/>
-  }<br/>
-배경의 시작 위치가 x축으로 0, y축으로 60%에 위치하게 함.<br/>
-  
-  60% {<br/>
-    background-position: 160px 100%;<br/>
-  }<br/>
-  애니메이션이 60% 진행된 시점에서 배경이 x축 160px, y축 100% 위치로 이동.<br/>
-  
-  100% {<br/>
-    background-position: 160px;<br/>
-  }<br/>
-}<br/>
-최종적으로 배경의 x축 위치는 160px로 고정되고, y축은 기본값 0<br/>
+
+
 
 
 ## 마우스 스크롤 애니메이션
@@ -59,10 +52,10 @@ position : fixed를 이용해 위치를 고정시키고 마우스 모양을 만�
 translateY를 이용해서 현재의 위치에서 Y축으로 위 아래로 움직이도록 모션을 만들어주었다.<br>
 ease-out을 사용해 애니메이션이 부드럽게 실행되도록 해주었다.<br><br>
 
-ease: 천천-빠름-천천<br>
-ease-in: 보통-빠르게<br>
-ease-out: 보통-느리게<br>
-ease-in-out: 천천-보통-천천<br>
+### ease: 천천-빠름-천천
+### ease-in: 보통-빠르게
+### ease-out: 보통-느리게
+### ease-in-out: 천천-보통-천천
 
 
 
