@@ -1,0 +1,361 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+body {
+  color: #fff;
+  background-color: #000000;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* header */
+
+.iconmouse {
+  position: fixed;
+  bottom: 50%;
+  right: 30px;
+  transform: translate(-50%, 0);
+  z-index: 1;
+  width: 30px;
+  height: 50px;
+  border: 2px solid #fff;
+  border-radius: 20px;
+}
+@keyframes Mouse_act {
+  0% {
+    transform: translateY(5px);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+
+  100% {
+    transform: translateY(5px);
+  }
+}
+.iconmouse::before {
+  content: 'SCROLL';
+  display: block;
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  margin-left: -29px;
+  width: 60px;
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: 0px;
+  font-weight: 600;
+}
+.iconmouse .ball {
+  position: absolute;
+  top: 8px;
+  left: 13px;
+  width: 4px;
+  height: 4px;
+  background: #fff;
+  border-radius: 50%;
+  animation: Mouse_act 1s ease-out infinite;
+}
+.header-title {
+  z-index: 100;
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding: 20px;
+  position: fixed;
+  background: linear-gradient(to right, #4d4d4d 0, white 10%, #4d4d4d 20%);
+  background-position: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+  animation-fill-mode: forwards;
+  text-decoration: none;
+  white-space: nowrap;
+}
+@keyframes shine {
+  0% {
+    background-position: 0 60%;
+  }
+  60% {
+    background-position: 160px 100%;
+  }
+  100% {
+    background-position: 160px;
+  }
+}
+
+.portfolio {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #4d4d4d;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.publisher {
+  display: flex;
+  font-size: 60px;
+  align-items: flex-start;
+  color: #fff;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+span {
+  font-family: 'Black Han Sans', sans-serif;
+  position: sticky;
+  top: calc(50% - 50px);
+  height: 100px;
+  display: inline-flex;
+  align-items: center;
+  margin-left: 2px;
+  margin-right: 2px;
+  font-size: 120px;
+}
+.c2 {
+  margin-top: 50vw;
+}
+
+.c3 {
+  margin-top: 100vw;
+}
+
+.c4 {
+  margin-top: 80vw;
+}
+
+.c5 {
+  margin-top: 150vw;
+}
+
+.c6 {
+  margin-top: 180vw;
+}
+
+.c7 {
+  margin-top: 200vw;
+}
+.bg {
+  position: absolute;
+  left: -25vw;
+  top: -50vw;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+/* main */
+
+.main h1 {
+  margin-left: 150px;
+  font-size: 2rem;
+  padding: 70px 0 0;
+}
+
+.work {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+.flip {
+  position: relative;
+}
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+.flip:hover .card {
+  transform: rotateY(180deg);
+}
+.project {
+  margin-right: 20px;
+  width: 400px;
+  height: 400px;
+  backface-visibility: hidden;
+}
+.project0 {
+  background-image: url(./images/20240930_150647.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.project1 {
+  background-image: url(./images/campaign_pc_7.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.project2 {
+  background-image: url(./images/00.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.project3 {
+  background-image: url(./images/stussyMain.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.project-back {
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 5%;
+  font-size: 1.5rem;
+}
+.project-link {
+  padding: 20px 0 0 0;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  border: none;
+  color: #fff;
+}
+.project-site {
+  text-align: center;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  padding: 2px;
+  width: 70px;
+  margin-right: 10px;
+}
+.project-code {
+  border: 2px solid #fff;
+  padding: 2px;
+  text-align: center;
+  border-radius: 4px;
+  width: 130px;
+}
+.project-site:hover,
+.project-code:hover {
+  border: 2px solid greenyellow;
+  background-color: #000;
+  color: #fff;
+}
+/* footer */
+.footer-wrapper {
+  text-align: center;
+  padding: 30px;
+}
+.btn-open-modal {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  background-color: #000;
+  text-decoration: none;
+  border: none;
+  animation: about_act 1s ease-out infinite;
+}
+@keyframes about_act {
+  0% {
+    transform: translateY(5px);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+
+  100% {
+    transform: translateY(5px);
+  }
+}
+.btn-open-modal:hover {
+  opacity: 0.7;
+}
+.modal {
+  position: fixed;
+  display: none;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-family: 'Nanum Gothic', sans-serif;
+  font-style: normal;
+}
+.modal_body {
+  position: fixed;
+  top: 50%;
+  width: 600px;
+  height: 600px;
+  overflow-y: auto;
+  padding: 40px;
+  text-align: center;
+  color: #000;
+  background-color: rgba(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
+  transform: translateY(-50%);
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.modal-header h2 {
+  font-family: 'Nanum Brush Script', cursive;
+  font-size: 1.8rem;
+}
+.modal-header h1 {
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 2.5rem;
+}
+.modal-img {
+  padding: 20px;
+}
+.modal_body img {
+  width: 180px;
+  border-radius: 50%;
+}
+.introduce {
+  padding: 30px 0 0 80px;
+  text-align: left;
+  font-size: 1.4rem;
+  color: #000000;
+}
+.introduce p {
+  line-height: 2.4rem;
+}
+.education,
+.EXPERIENCE {
+  padding: 30px 0 20px 0;
+}
+.EXPERIENCE {
+  margin-bottom: 20px;
+}
+.education h3,
+.EXPERIENCE h3,
+.skl h3 {
+  border-bottom: 2px solid lightgray;
+  margin-bottom: 10px;
+  width: 400px;
+}
+.skills {
+  display: flex;
+}
+.skill img {
+  width: 35px;
+  height: 30px;
+  margin-right: 10px;
+}
+.modal-btn {
+  padding: 30px 0 0 0;
+}
+.btn-close-modal {
+  font-size: 2rem;
+  background-color: #fff;
+  border: none;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
