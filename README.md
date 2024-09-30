@@ -56,10 +56,10 @@ position : fixed를 이용해 위치를 고정시키고 마우스 모양을 만�
 translateY를 이용해서 현재의 위치에서 Y축으로 위 아래로 움직이도록 모션을 만들어주었다.<br>
 ease-out을 사용해 애니메이션이 부드럽게 실행되도록 해주었다.<br><br>
 
-#### ease: 천천-빠름-천천
-#### ease-in: 보통-빠르게
-#### ease-out: 보통-느리게
-#### ease-in-out: 천천-보통-천천
+ease: 천천-빠름-천천<br>
+ease-in: 보통-빠르게<br>
+ease-out: 보통-느리게<br>
+ease-in-out: 천천-보통-천천
 
 
 </div>
