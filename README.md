@@ -26,7 +26,7 @@ background의 색상을 없앨 때 none(없애기), transparent(투명)을 사�
 애니메이션이 끝난 후의 상태를 설정한다.<br/>
 forwards는 애니메이션의 끝난 후 그 지점에 그대로 있는 상태이다.<br/>
 
-### white-space  
+#### white-space  
 줄바꿈, 공백을 설정한다.<br/>
 white-space: nowrap;은 줄바꿈, 공백을 인식하지 못하며 한 줄로 정렬한다.<br/>
 
@@ -61,4 +61,21 @@ ease-in: 보통-빠르게<br>
 ease-out: 보통-느리게<br>
 ease-in-out: 천천-보통-천천
 
+## 카드 뒤집기 애니메이션
+
+
+
+![bandicam2024-10-0201-13-53-953-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/64000f1b-7d13-4155-80ee-1dbc7855652d)<br/>
+![flip](https://github.com/user-attachments/assets/b689327a-b5da-4841-b86a-5d87714073ec)<br/>
+![flip2](https://github.com/user-attachments/assets/7e4d0619-f6fa-4f0f-8064-c2c6bd6ee5eb)<br/>
+
+마우스 호버 시 카드를 뒤집어 앞면에서 뒷면으로 전환하는 효과를 구현하였다.<br/>
+
++ transform-style: preserve-3d
+  transform-style은 3D 공간에서 자식 요소들을 렌더링하는 방법을 결정하는데, 기본값은 flat(납작한)이다.
+  이와 반대로 3D 렌더링을 결정하는 값이 preserve-3D으로, 이를 사용하면 해당 컨테이너 영역을 삼차원 영역으로 활용할 수 있다.
+
++ transform: rotateY(180deg)는 카드를 y축 기준으로 180도 회전시키는 3D 변환을 의미하고, 결과적으로 앞면이 사라지고 뒷면이 보이게 된다.
+
++ backface-visibility: hidden은 카드를 뒤집었을 때 카드의 앞면이 보이지 않도록 설정한다. 이 속성이 없으면 회전 시 앞면과 뒷면이 동시에 보일 수 있다.
 
