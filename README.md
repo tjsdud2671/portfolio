@@ -44,7 +44,7 @@
 ![마우스 아이콘](https://github.com/user-attachments/assets/c8426033-432a-442e-a61f-598efe173c84)<br>
 ![마우스 아이콘 1](https://github.com/user-attachments/assets/5185a87b-9459-4339-a767-f25f3c99d6a7)<br>
 
-+ position : fixed를 이용해 위치를 고정시키고 마우스 모양을 만들어주었다.
+position : fixed를 이용해 위치를 고정시키고 마우스 모양을 만들어주었다.
 
 ![마우스 아이콘 2](https://github.com/user-attachments/assets/cccfde54-3e10-4db3-b52d-e34379ac6119)<br>
 
