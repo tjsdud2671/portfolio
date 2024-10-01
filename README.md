@@ -1,4 +1,4 @@
-<div align="center">
+
 
 
 ## 텍스트 효과
@@ -62,4 +62,3 @@ ease-out: 보통-느리게<br>
 ease-in-out: 천천-보통-천천
 
 
-</div>
